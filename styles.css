@@ -1,0 +1,60 @@
+
+main {
+
+    position: initial;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('img/simpsonsClouds.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #000; 
+}
+
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px; 
+    width: 90%; 
+    text-align: center; 
+}
+
+input {
+    padding: 10px;
+    width: 100%; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Responsive: Adaptar para pantallas pequeñas */
+@media (max-width: 600px) {
+    .weather-container {
+        padding: 15px;
+        width: 95%; 
+    }
+
+    input {
+        padding: 8px;
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px; 
+    }
+}
+
